@@ -1,0 +1,241 @@
+What is HTML?
+HTML stands for Hyper Text Markup Language
+HTML is the standard markup language for creating Web pages
+HTML describes the structure of a Web page
+HTML consists of a series of elements
+HTML elements tell the browser how to display the content
+HTML elements label pieces of content such as "this is a heading",
+    "this is a paragraph", "this is a link", etc.
+
+What is an HTML Element?
+An HTML element is defined by a start tag, some content, and an end tag:
+
+<tagname> Content goes here... </tagname>
+The HTML element is everything from the start tag to the end tag:
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+Start tag	Element content	End tag
+<h1>	My First Heading	</h1>
+<p>	   My first paragraph.	</p>
+<br>	none	none
+
+Note: Some HTML elements have no content (like the <br> element).
+These elements are called empty elements. Empty elements do not have an end tag!
+
+HTML is Not Case Sensitive
+HTML tags are not case sensitive: <P> means the same as <p>.
+The HTML standard does not require lowercase tags,
+but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTM
+
+HTML Headings
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading.
+
+Headings Are Important
+Search engines use the headings to index the structure and content of your web pages.
+Users often skim a page by its headings. It is important to use headings to show the
+document structure.
+
+<h1> headings should be used for main headings, followed by <h2>
+headings, then the less important <h3>, and so on.
+
+HTML Paragraphs
+The HTML <p> element defines a paragraph.
+A paragraph always starts on a new line, and browsers automatically add
+some white space (a margin) before and after a paragraph.
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+HTML Line Breaks
+The HTML <br> element defines a line break.
+
+Use <br> if you want a line break (a new line) without starting a new paragraph:
+
+HTML Styles
+The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+
+The HTML Style Attribute
+Setting the style of an HTML element, can be done with the style attribute.
+
+The HTML style attribute has the following syntax:
+
+<tagname style="property:value;">
+The property is a CSS property. The value is a CSS value
+
+Background Color
+The CSS background-color property defines the background color for an HTML element.
+
+Example
+Set the background color for a page to powderblue:
+
+<body style="background-color:powderblue;">
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+
+Text Color
+The CSS color property defines the text color for an HTML element:
+
+Example
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+Fonts
+The CSS font-family property defines the font to be used for an HTML element:
+
+Example
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+
+Text Size
+The CSS font-size property defines the text size for an HTML element:
+
+Example
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+Text Alignment
+The CSS text-align property defines the horizontal text alignment for an HTML element:
+
+Example
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+HTML Formatting Elements
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+HTML <b> and <strong> Elements
+The HTML <b> element defines bold text, without any extra importance.
+
+Example
+<b>This text is bold</b>
+
+The HTML <strong> element defines text with strong importance.
+The content inside is typically displayed in bold.
+
+Example
+<strong>This text is important!</strong>
+
+HTML <i> and <em> Elements
+The HTML <i> element defines a part of text in an alternate voice or mood. The
+content inside is typically displayed in italic.
+
+Tip: The <i> tag is often used to indicate a technical term, a phrase from another
+language, a thought, a ship name, etc.
+
+Example
+<i>This text is italic</i>
+The HTML <em> element defines emphasized text. The content inside is typically displayed in italic.
+
+Tip: A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
+
+Example
+<em>This text is emphasized</em>
+
+HTML <small> Element
+The HTML <small> element defines smaller text:
+
+Example
+<small>This is some smaller text.</small>
+HTML <mark> Element
+The HTML <mark> element defines text that should be marked or highlighted:
+
+Example
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+HTML <del> Element
+The HTML <del> element defines text that has been deleted from a document.
+Browsers will usually strike a line through deleted text:
+
+Example
+<p>My favorite color is <del>blue</del> red.</p>
+HTML <ins> Element
+The HTML <ins> element defines a text that has been inserted into a document.
+Browsers will usually underline inserted text:
+
+Example
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+HTML <sub> Element
+The HTML <sub> element defines subscript text. Subscript text appears half a
+character below the normal line, and is sometimes rendered in a smaller font.
+Subscript text can be used for chemical formulas, like H2O:
+
+Example
+<p>This is <sub>subscripted</sub> text.</p>
+HTML <sup> Element
+The HTML <sup> element defines superscript text. Superscript text appears half a
+character above the normal line, and is sometimes rendered in a smaller font. Superscript
+text can be used for footnotes, like WWW[1]:
+
+Example
+<p>This is <sup>superscripted</sup> text.</p>
+
+HTML Quotation and Citation Elements
+In this chapter we will go through the <blockquote>,<q>, <abbr>, <address>, <cite>, and <bdo> HTML elements.
+
+Example
+Here is a quote from WWF's website:
+
+For nearly 60 years, WWF has been protecting the future of nature. The world's
+leading conservation organization, WWF works in 100 countries
+and is supported by more than one million members in the United States
+and close to five million globally.
+
+HTML <blockquote> for Quotations
+The HTML <blockquote> element defines a section that is quoted from another source.
+
+Browsers usually indent <blockquote> elements.
+
+Example
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+HTML <q> for Short Quotations
+The HTML <q> tag defines a short quotation.
+
+Browsers normally insert quotation marks around the quotation.
+
+Example
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+HTML Comments
+HTML comments are not displayed in the browser, but they can help document your HTML source code.
+
+HTML Comment Tag
+You can add comments to your HTML source by using the following syntax:
+
+<!-- Write your comments here -->
+Notice that there is an exclamation point (!) in the start tag, but not in the end tag.
+
+Note: Comments are not displayed by the browser, but they can help document your HTML source code.
+
+Add Comments
+With comments you can place notifications and reminders in your HTML code:
+
+Example
+<!-- This is a comment -->
+
+<p>This is a paragraph.</p>
+
+<!-- Remember to add more information here -

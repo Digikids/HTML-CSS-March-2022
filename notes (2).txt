@@ -1,0 +1,129 @@
+What is HTML?
+HTML stands for Hyper Text Markup Language
+HTML is the standard markup language for creating Web pages
+HTML describes the structure of a Web page
+HTML consists of a series of elements
+HTML elements tell the browser how to display the content
+HTML elements label pieces of content such as "this is a heading",
+    "this is a paragraph", "this is a link", etc.
+
+Comments are programmer readable annotations that cannot be executed
+<!--comments go here -->
+
+What is an HTML Element?
+An HTML element is defined by a start tag, some content, and an end tag
+
+<tagname> Content goes here... </tagname>
+The HTML element is everything from the start tag to the end tag:
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+Start tag	Element content	End tag
+<h1>	My First Heading	</h1>
+<p>	   My first paragraph.	</p>
+<br>	none	none
+
+Note: Some HTML elements have no content (like the <br> element).
+These elements are called empty elements.
+Empty elements do not have an end tag!
+
+HTML is Not Case Sensitive
+HTML tags are not case sensitive: <P> means the same as <p>.
+The HTML standard does not require lowercase tags,
+but I would recommends lowercase in HTML,
+and demands lowercase for stricter document types like XHTM
+
+HTML Headings
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading.
+<h6> defines the least important heading.
+
+Headings Are Important
+Search engines use the headings to index the structure and
+content of your web pages.
+Users often skim a page by its headings. It is important to use headings to show the
+document structure.
+
+<h1> headings should be used for main headings, followed by <h2>
+headings, then the less important <h3>, and so on.
+
+HTML Paragraphs
+The HTML <p> element defines a paragraph.
+A paragraph always starts on a new line, and browsers automatically add
+some white space (a margin) before and after a paragraph.
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+HTML Line Breaks
+The HTML <br> element defines a line break.
+Use <br> if you want a line break (a new line) without starting a new paragraph:
+
+HTML Styles
+-> Inline styling
+-> External styling
+The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+
+The HTML Style Attribute
+Setting the style of an HTML element, can be done with the style attribute.
+
+The HTML style attribute has the following syntax:
+
+<tagname style="property:value;">
+The property is a CSS property. The value is a CSS value
+
+Background Color
+The CSS background-color property defines the background color for an HTML element.
+
+Example
+Set the background color for a page to powderblue:
+
+<body style="background-color:powderblue;">
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+
+Text Color
+The CSS color property defines the text color for an HTML element:
+
+Example
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+Fonts
+The CSS font-family property defines the font to be used for an HTML element:
+
+Example
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+
+Text Size
+The CSS font-size property defines the text size for an HTML element:
+
+Example
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+Text Alignment
+The CSS text-align property defines the horizontal text alignment for an HTML element:
+
+Example
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+HTML Formatting Elements
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text

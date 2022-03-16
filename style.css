@@ -1,0 +1,12 @@
+body {
+    background-color: aqua;
+}
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p {
+    font-size: larger;
+    border: 2px solid red;
+    padding: 15px;
+    margin: 40px;
+}

@@ -318,6 +318,7 @@ External - by using a <link> element to link to an external CSS file
 The most common way to add CSS, is to keep the styles in external CSS files. 
 
 
+
 Inline CSS
 An inline CSS is used to apply a unique style to a single HTML element.
 
@@ -379,7 +380,8 @@ Example
 </body>
 </html>
 
-The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.
+The external style sheet can be written in any text editor.
+The file must not contain any HTML code, and must be saved with a .css extension.
 
 Here is what the "styles.css" file looks like:
 

@@ -446,3 +446,466 @@ Example
 This example uses a full URL to link to a style sheet:
 
 <link rel="stylesheet" href="styles.css">
+
+HTML Links - Hyperlinks
+HTML links are hyperlinks.
+
+You can click on a link and jump to another document.
+
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+Note: A link does not have to be text. A link can be an image or any other HTML element!
+
+HTML Links - Syntax
+The HTML <a> tag defines a hyperlink. It has the following syntax:
+
+<a href="url">link text</a>
+The most important attribute of the <a> element is the href attribute,
+which indicates the link's destination.
+
+The link text is the part that will be visible to the reader.
+
+Clicking on the link text, will send the reader to the specified URL address.
+
+Example
+This example shows how to create a link to Digikids.com:
+
+<a href="https://www.Digikids.com/">Visit Digikids.com!</a>
+
+By default, links will appear as follows in all browsers:
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+Tip: Links can of course be styled with CSS, to get another look!
+
+HTML Links - The target Attribute
+By default, the linked page will be displayed in the current browser window.
+To change this, you must specify another target for the link.
+
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+Example
+Use target="_blank" to open the linked document in a new browser window or tab:
+
+Absolute URLs vs. Relative URLs
+Both examples above are using an absolute URL (a full web address) in the href attribute.
+
+A local link (a link to a page within the same website) is 
+specified with a relative URL (without the "https://www" part):
+
+Example
+<h2>Absolute URLs</h2>
+<p><a href="https://www.digikids.co.ke/">School</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="i">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+Link to an Email Address
+Use mailto: inside the href attribute to create a link that opens the user's 
+email program (to let them send a new email):
+
+Example
+<a href="mailto:someone@example.com">Send email</a>
+
+Button as a Link
+To use an HTML button as a link, you have to add some JavaScript code.
+
+JavaScript allows you to specify what happens at certain events, such as a click of a button:
+
+Example
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+HTML Link Colors
+By default, a link will appear like this (in all browsers):
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+You can change the link state colors, by using CSS:
+
+Example
+Here, an unvisited link will be green with no underline. 
+A visited link will be pink with no underline. 
+An active link will be yellow and underlined. 
+In addition, when mousing over a link (a:hover) it will become red and underlined:
+
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+Link Buttons
+A link can also be styled as a button, by using CSS:
+
+This is a link
+Example
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
+HTML Images Syntax
+The HTML <img> tag is used to embed an image in a web page.
+
+Images are not technically inserted into a web page; images are linked to web pages. 
+The <img> tag creates a holding space for the referenced image.
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The <img> tag has two required attributes:
+
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image
+Syntax
+<img src="url" alt="alternatetext">
+The src Attribute
+The required src attribute specifies the path (URL) to the image.
+
+Note: When a web page loads, it is the browser, at that moment, that gets the image 
+from a web server and inserts it into the page. Therefore, make sure that the image 
+actually stays in the same spot in relation to the web page, otherwise your visitors 
+will get a broken link icon. The broken link icon and the alt text are shown if the 
+browser cannot find the image.
+
+Example
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+The alt Attribute
+The required alt attribute provides an alternate text for an image, 
+if the user for some reason cannot view it (because of slow connection, 
+an error in the src attribute, or if the user uses a screen reader).
+
+The value of the alt attribute should describe the image:
+
+Example
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+Image Size - Width and Height
+You can use the style attribute to specify the width and height of an image.
+
+Example
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+Width and Height, or Style?
+The width, height, and style attributes are all valid in HTML.
+
+However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+</body>
+</html>
+
+Images on Another Server/Website
+Some web sites point to an image on another server.
+
+To point to an image on another server, you must specify an absolute (full) URL in the src attribute:
+
+Example
+<img src="https://www.im1.jpg" alt="Digikids.com">
+
+Background Image on a HTML element
+To add a background image on an HTML element, use the HTML style attribute
+and the CSS background-image property:
+
+Example
+Add a background image on a HTML element:
+
+<p style="background-image: url('img_girl.jpg');">
+
+You can also specify the background image in the <style> element, in the <head> section:
+
+Example
+Specify the background image in the <style> element:
+
+<style>
+p {
+  background-image: url('img_girl.jpg');
+}
+</style>
+
+Background Image on a Page
+If you want the entire page to have a background image, you must specify the background
+image on the <body> element:
+
+Example
+Add a background image for the entire page:
+
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+
+Background Image on a Page
+If you want the entire page to have a background image, you must specify the background
+image on the <body> element:
+
+Example
+Add a background image for the entire page:
+
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+Background Repeat
+If the background image is smaller than the element, 
+the image will repeat itself, horizontally and vertically, 
+until it reaches the end of the element:
+
+Example
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+}
+</style>
+To avoid the background image from repeating itself, set the background-repeat property to no-repeat.
+
+Example
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+Background Cover
+If you want the background image to cover the entire element, 
+you can set the background-size property to cover.
+
+Also, to make sure the entire element is always covered, 
+set the background-attachment property to fixed:
+
+This way, the background image will cover the entire element, 
+with no stretching (the image will keep its original proportions):
+
+Example
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+Background Stretch
+If you want the background image to stretch to fit the entire element, 
+you can set the background-size property to 100% 100%:
+
+Try resizing the browser window, and you will see that the image will stretch, 
+but always cover the entire element.
+
+Example
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+
+HTML tables allow web developers to arrange data into rows and columns.
+
+Example
+Company	                Contact	                    Country
+Alfreds Futterkiste	    Maria Anders	                Germany
+Centro comercial M      octezuma	Francisco Chang	    Mexico
+Ernst Handel	          Roland Mendel	              Austria
+Island Trading	        Helen Bennett	              UK
+Laughing Bacchus        Winecellars	Yoshi 	        Canada
+Magazzini Alimentari    Riuniti	Giovanni 	          Italy
+
+Table Cells
+Each table cell is defined by a <td> and a </td> tag.
+
+td stands for table data.
+
+Everything between <td> and </td> are the content of the table cell.
+
+Table Rows
+Each table row starts with a <tr> and end with a </tr> tag.
+
+HTML Table Tags
+Tag	     Description
+<table>	 Defines a table
+<th>	   Defines a header cell in a table
+<tr>	   Defines a row in a table
+<td>	   Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table
+
+How To Add a Border
+When you add a border to a table, you also add borders around each table cell:
+
+To add a border, use the CSS border property on table, th, and td elements:
+table, th, td {
+  border: 1px solid black;
+}
+
+Collapsed Table Borders
+To avoid having double borders like in the example above, set
+the CSS border-collapse property to collapse.
+
+This will make the borders collapse into a single border:
+Example
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+Style Table Borders
+If you set a background color of each cell, and give the border a
+white color (the same as the document background), you get the impression of an invisible border:
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+
+Round Table Borders
+With the border-radius property, the borders get rounded corners:
+
+Example
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+Border Color
+With the border-color property, you can set the color of the border.
+Example
+ th, td {
+  border-color: #96D4D4;
+}
+
+HTML Table Width
+To set the width of a table, add the style attribute to the <table> element
+Set the width of the table to 100%:
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+o set the size of a specific column, add the style attribute on a <th> or <td> element:
+
+Example
+Set the width of the first column to 70%:
+
+<table style="width:100%">
+  <tr>
+    <th style="width:70%">Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+To set the height of a specific row, add the style attribute on a table row element:
+
+Example
+Set the height of the second row to 200 pixels:
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>

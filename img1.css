@@ -1,0 +1,29 @@
+/* body {
+    background-image:
+    url(images/img1.jpg);
+} */
+img {
+    border-radius: 50px;
+    /* Rounded images */
+    /* border-radius: 10%; */
+
+    /* thumbnail images */
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 4px;
+    padding: 5px;
+
+/* Centering an image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+/* Transparent Image*/
+
+    opacity: 1;
+    filter: grayscale(50%);
+}
+
+h1 {
+    color:aqua;
+}

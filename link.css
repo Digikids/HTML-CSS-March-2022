@@ -1,0 +1,18 @@
+a:link {
+    color:green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(2, 150, 241);
+    background-color: transparent;
+    text-decoration: dotted;
+}
+
+a:hover {
+    color: red;
+    background-color: aqua;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}

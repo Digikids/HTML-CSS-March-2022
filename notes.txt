@@ -909,3 +909,281 @@ Set the height of the second row to 200 pixels:
     <td>94</td>
   </tr>
 </table>
+
+HTML Lists
+Unordered HTML lists
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+
+The list items will be marked with bullets (small black circles) by default:
+
+Example
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Ordered HTML List
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+
+The list items will be marked with numbers by default:
+
+Example
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+HTML Description Lists
+HTML also supports description lists.
+
+A description list is a list of terms, with a description of each term.
+
+The <dl> tag defines the description list, the <dt> tag defines the term (name),
+ and the <dd> tag describes each term:
+
+Example
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+HTML Unordered Lists
+
+Unordered HTML List
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+
+The list items will be marked with bullets (small black circles) by default:
+
+Example
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Unordered HTML List - Choose List Item Marker
+The CSS list-style-type property is used to define the style of the list item marker.
+It can have one of the following values:
+
+Value	Description
+disc	Sets the list item marker to a bullet (default)
+circle	Sets the list item marker to a circle
+square	Sets the list item marker to a square
+none	The list items will not be marked
+
+Example - Disc
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+cir
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+squar
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Nested HTML Lists
+Lists can be nested (list inside list):
+
+Example
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+Horizontal List with CSS
+HTML lists can be styled in many different ways with CSS.
+
+One popular way is to style a list horizontally, to create a navigation menu:
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+
+CSS Lists
+HTML Lists and CSS List Properties
+In HTML, there are two main types of lists:
+
+unordered lists (<ul>) - the list items are marked with bullets
+ordered lists (<ol>) - the list items are marked with numbers or letters
+The CSS list properties allow you to:
+
+Set different list item markers for ordered lists
+Set different list item markers for unordered lists
+Set an image as the list item marker
+Add background colors to lists and list items
+
+Different List Item Markers
+The list-style-type property specifies the type of list item marker.
+
+The following example shows some of the available list item markers:
+
+Example
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+An Image as The List Item Marker
+The list-style-image property specifies an image as the list item marker:
+
+Example
+ul {
+  list-style-image: url('sqpurple.gif');
+}
+
+Position The List Item Markers
+The list-style-position property specifies the position of the list-item markers
+(bullet points).
+"list-style-position: outside;" means that the bullet points will be outside
+the list item. The start of each line of a list item will be aligned vertically.
+This is default:
+
+Coffee - A brewed drink prepared from roasted coffee beans...
+Tea
+Coca-cola
+"list-style-position: inside;" means that the bullet points will be inside
+the list item. As it is part of the list item, it will be part of the text and
+push the text at the start:
+
+Coffee - A brewed drink prepared from roasted coffee beans...
+Tea
+Coca-cola
+Example
+ul.a {
+  list-style-position: outside;
+}
+
+ul.b {
+  list-style-position: inside;
+}
+
+Remove Default Settings
+The list-style-type:none property can also be used to remove the markers/bullets.
+Note that the list also has default margin and padding. To remove this, add margin:0
+and padding:0 to <ul> or <ol>:
+
+Example
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+List - Shorthand property
+The list-style property is a shorthand property. It is used to set all the list
+properties in one declaration:
+
+Example
+ul {
+  list-style: square inside url("sqpurple.gif");
+}
+
+When using the shorthand property, the order of the property values are:
+
+list-style-type (if a list-style-image is specified, the value of this property
+will be displayed if the image for some reason cannot be displayed)
+list-style-position (specifies whether the list-item markers should appear inside
+or outside the content flow)
+list-style-image (specifies an image as the list item marker)
+If one of the property values above are missing, the default value for the missing
+property will be inserted, if any.
+
+Styling List With Colors
+We can also style lists with colors, to make them look a little more interesting.
+
+Anything added to the <ol> or <ul> tag, affects the entire list, while properties
+added to the <li> tag will affect the individual list items:
+
+Example
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol li {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}

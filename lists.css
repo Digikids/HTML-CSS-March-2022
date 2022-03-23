@@ -1,0 +1,20 @@
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+    margin: 0;
+    padding: 20;
+    background: #3399ff;
+}
+/* ul {
+list-style-image: url(Chelsea_FC.svg.png);
+} */
+
+ol{
+    list-style-type: lower-roman;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #ff9999;
+    padding: 20px;
+
+}
+
